@@ -1,0 +1,330 @@
+[
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "admin",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "employee",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "customer",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$bz8lKhCN5neeCBCQEPr9QO$+cJL0SDftwqXuOd8Zk8IkvA8vnLYJoV3GG04c8Op5M4=",
+    "last_login": "2026-10-17T05:43:00.580Z",
+    "is_superuser": true,
+    "username": "admin_test",
+    "first_name": "Admin",
+    "last_name": "User",
+    "email": "admin@hotel.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-10-16T11:37:24.793Z",
+    "groups": [
+      [
+        "admin"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$u6pWlDQWktxJmXqqPbM6if$IDBvds/dZtylWyot7EntqGR3QCXFdz3kX16WzFaNhSw=",
+    "last_login": "2026-10-17T06:01:11.830Z",
+    "is_superuser": false,
+    "username": "employee_test",
+    "first_name": "Employee",
+    "last_name": "User",
+    "email": "employee@hotel.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-16T11:37:25.263Z",
+    "groups": [
+      [
+        "employee"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$ixkOZHg2KonE4wEaQh3tSP$dqNmUt63yJph+fTr/84Vnrzgx+/KYUr/AQtDqW5d1kg=",
+    "last_login": "2026-10-17T05:42:18.752Z",
+    "is_superuser": false,
+    "username": "user_test",
+    "first_name": "Test",
+    "last_name": "Customer",
+    "email": "user@hotel.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-16T11:37:25.743Z",
+    "groups": [
+      [
+        "customer"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$YA7JB55oEUIjvY7HeacOKn$JPBMuTpm6fBblS9zAi1bnhfaFw7P3VjJxOIPk43rF/4=",
+    "last_login": "2026-10-17T06:00:28.974Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-10-17T06:00:22.967Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "4q41qrcuwc9x7m4ipv4fmf5xzcypc91d",
+  "fields": {
+    "session_data": ".eJxVjEEKwyAQAP-y5yJGXdAce-8bZF3XmrYoxORU-vcSyKG9zgzzhkj7VuM-ZI1LhhkmuPyyRPyUdoj8oHbvinvb1iWpI1GnHerWs7yuZ_s3qDQqzFDQ6hIysdMkhgsGg8ZpZgxiqFAQF_QUSuIsXhx56yxa9FY8kkUPny_6QjgN:1xHgRP:jyqO8Pmaftof_D2l0S5YGgTqzbZgYQNYMYo89_Ir5i0",
+    "expire_date": "2026-10-30T11:49:39.086Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "8xwxtu6x5tuus0y6da808dfc5e222k0c",
+  "fields": {
+    "session_data": ".eJxVjEsOwiAUAO_y1oYgf7p03zOQBzykaiAp7cp4d9OkC93OTOYNAfethn3QGpYMEwi4_LKI6UntEPmB7d5Z6m1bl8iOhJ12sLlnet3O9m9QcVSYAJ02lAtXKNSVaytVIu6M8TJFqYVXhQtJxRoePVkXkyAuEL0tRSeJCJ8vzhY3zw:1xHxTj:EWrrwY9U2fhxfUQlRFvxERQBTHn113-t1qchk5G0yy8",
+    "expire_date": "2026-10-31T06:01:11.847Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "h04u2zpojk3zbf783gd3nwth57ydqrhy",
+  "fields": {
+    "session_data": ".eJxVjEsOwiAUAO_y1oYgf7p03zOQBzykaiAp7cp4d9OkC93OTOYNAfethn3QGpYMEwi4_LKI6UntEPmB7d5Z6m1bl8iOhJ12sLlnet3O9m9QcVSYAJ02lAtXKNSVaytVIu6M8TJFqYVXhQtJxRoePVkXkyAuEL0tRSeJCJ8vzhY3zw:1xHxD7:9sdOe0Gn1yXRfPfR3JW7ftTyrzT1MsvtEZQygZId678",
+    "expire_date": "2026-10-31T05:44:01.062Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vl82o96udjftscvb04s84b13b1x3b8ka",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP-yZ0Ngyxbao3ffQJYulaqBpLQn499Nkx70OjOZNwTetxz2ltawCIxg4fLLIk_PVA4hDy73qqZatnWJ6kjUaZu6VUmv69n-DTK3DCM4nL1BioS6x14wocHORmYafPTWiNGiGbWPeiYvAzlLHZvEJJqdMHy-tbo3Ig:1xHxT2:_TLVgwjrLZ3J8R8mAhm0_YFfEv7rHDBltzJSZ6ViP38",
+    "expire_date": "2026-10-31T06:00:28.981Z"
+  }
+},
+{
+  "model": "api.userdetails",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "user_test"
+    ],
+    "phone": "1234567890",
+    "address": "123 Test Street",
+    "id_proof": ""
+  }
+},
+{
+  "model": "api.employeedetails",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "employee_test"
+    ],
+    "phone": "9876543210",
+    "position": "Front Desk",
+    "is_active_employee": true
+  }
+},
+{
+  "model": "api.roomcategory",
+  "pk": 1,
+  "fields": {
+    "name": "Luxury Suite",
+    "description": "Spacious suite with premium amenities, king-size bed, and city view."
+  }
+},
+{
+  "model": "api.roomcategory",
+  "pk": 2,
+  "fields": {
+    "name": "Premium Class",
+    "description": "Comfortable room with modern amenities and queen-size bed."
+  }
+},
+{
+  "model": "api.roomcategory",
+  "pk": 3,
+  "fields": {
+    "name": "Economy Class",
+    "description": "Clean and cozy room with essential amenities at an affordable price."
+  }
+},
+{
+  "model": "api.room",
+  "pk": 1,
+  "fields": {
+    "room_number": "101",
+    "category": 1,
+    "price_per_night": "5000.00",
+    "description": "Ocean view luxury suite",
+    "amenities": "King Bed, AC, WiFi, Mini Bar, Balcony",
+    "status": "available"
+  }
+},
+{
+  "model": "api.room",
+  "pk": 2,
+  "fields": {
+    "room_number": "102",
+    "category": 1,
+    "price_per_night": "5500.00",
+    "description": "Garden view luxury suite",
+    "amenities": "King Bed, AC, WiFi, Mini Bar, Jacuzzi",
+    "status": "available"
+  }
+},
+{
+  "model": "api.room",
+  "pk": 3,
+  "fields": {
+    "room_number": "201",
+    "category": 2,
+    "price_per_night": "3000.00",
+    "description": "Premium room second floor",
+    "amenities": "Queen Bed, AC, WiFi, TV",
+    "status": "available"
+  }
+},
+{
+  "model": "api.room",
+  "pk": 4,
+  "fields": {
+    "room_number": "202",
+    "category": 2,
+    "price_per_night": "3000.00",
+    "description": "Premium room with city view",
+    "amenities": "Queen Bed, AC, WiFi, TV",
+    "status": "available"
+  }
+},
+{
+  "model": "api.room",
+  "pk": 5,
+  "fields": {
+    "room_number": "203",
+    "category": 2,
+    "price_per_night": "3200.00",
+    "description": "Premium corner room",
+    "amenities": "Queen Bed, AC, WiFi, TV, Desk",
+    "status": "available"
+  }
+},
+{
+  "model": "api.room",
+  "pk": 6,
+  "fields": {
+    "room_number": "301",
+    "category": 3,
+    "price_per_night": "1500.00",
+    "description": "Economy room",
+    "amenities": "Single Bed, AC, WiFi",
+    "status": "available"
+  }
+},
+{
+  "model": "api.room",
+  "pk": 7,
+  "fields": {
+    "room_number": "302",
+    "category": 3,
+    "price_per_night": "1500.00",
+    "description": "Economy room near elevator",
+    "amenities": "Single Bed, AC, WiFi",
+    "status": "available"
+  }
+},
+{
+  "model": "api.room",
+  "pk": 8,
+  "fields": {
+    "room_number": "303",
+    "category": 3,
+    "price_per_night": "1800.00",
+    "description": "Economy double room",
+    "amenities": "Double Bed, AC, WiFi, TV",
+    "status": "available"
+  }
+},
+{
+  "model": "api.booking",
+  "pk": 1,
+  "fields": {
+    "booking_id": "73c08c50-f1d2-4160-9cd5-ae6e3d239b98",
+    "customer": [
+      "user_test"
+    ],
+    "room": 2,
+    "check_in_date": "2026-10-18",
+    "check_out_date": "2026-10-19",
+    "status": "cancelled",
+    "total_amount": "5500.00",
+    "created_at": "2026-10-17T05:15:33.149Z",
+    "updated_at": "2026-10-17T05:22:55.986Z"
+  }
+},
+{
+  "model": "api.booking",
+  "pk": 2,
+  "fields": {
+    "booking_id": "860396c7-875e-4fd9-b6c3-f152f0ab5495",
+    "customer": [
+      "user_test"
+    ],
+    "room": 4,
+    "check_in_date": "2026-10-17",
+    "check_out_date": "2026-10-18",
+    "status": "confirmed",
+    "total_amount": "3000.00",
+    "created_at": "2026-10-17T05:17:18.430Z",
+    "updated_at": "2026-10-17T05:17:18.430Z"
+  }
+},
+{
+  "model": "api.booking",
+  "pk": 3,
+  "fields": {
+    "booking_id": "a5b1cbcd-1097-4277-84a3-1b247f08dff9",
+    "customer": [
+      "user_test"
+    ],
+    "room": 5,
+    "check_in_date": "2026-10-17",
+    "check_out_date": "2026-10-18",
+    "status": "confirmed",
+    "total_amount": "3200.00",
+    "created_at": "2026-10-17T05:42:41.433Z",
+    "updated_at": "2026-10-17T05:42:41.433Z"
+  }
+}
+]
