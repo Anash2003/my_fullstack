@@ -482,8 +482,6 @@ def booking_detail_view(request, pk):
             if booking.status not in ['pending', 'confirmed']:
                 return Response({'error': 'Only pending or confirmed bookings can be cancelled.'}, status=status.HTTP_400_BAD_REQUEST)
 
-        booking.status = new_status
-
         # If checking in, update room status to occupied
         if new_status == 'checked_in':
             if role not in ['admin', 'employee']:
@@ -492,6 +490,8 @@ def booking_detail_view(request, pk):
                 return Response({'error': 'Employee account deactivated.'}, status=status.HTTP_403_FORBIDDEN)
             if booking.status == 'checked_in':
                 return Response({'error': 'Already checked in.'}, status=status.HTTP_400_BAD_REQUEST)
+            if booking.status not in ['confirmed', 'pending']:
+                return Response({'error': f'Cannot check in a booking with status "{booking.status}".'}, status=status.HTTP_400_BAD_REQUEST)
             booking.room.status = 'occupied'
             booking.room.save()
 
@@ -501,9 +501,14 @@ def booking_detail_view(request, pk):
                 return Response({'error': 'Only admin or employee can check out.'}, status=status.HTTP_403_FORBIDDEN)
             if role == 'employee' and not check_employee_active(user):
                 return Response({'error': 'Employee account deactivated.'}, status=status.HTTP_403_FORBIDDEN)
+            if booking.status == 'checked_out':
+                return Response({'error': 'Already checked out.'}, status=status.HTTP_400_BAD_REQUEST)
+            if booking.status != 'checked_in':
+                return Response({'error': f'Cannot check out a booking with status "{booking.status}".'}, status=status.HTTP_400_BAD_REQUEST)
             booking.room.status = 'available'
             booking.room.save()
 
+        booking.status = new_status
         booking.save()
         serializer = BookingSerializer(booking)
         return Response(serializer.data)
