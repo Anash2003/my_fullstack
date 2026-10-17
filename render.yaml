@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: hotel-backend
+    runtime: python
+    buildCommand: "pip install -r requirements.txt && python hotel_backend/manage.py collectstatic --no-input && python hotel_backend/manage.py migrate"
+    startCommand: "gunicorn --chdir hotel_backend hotel_backend.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
